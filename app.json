@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/newDetails/newDetails",
+    "pages/theory/theory",
+    "pages/law/law",
+    "pages/knowDetails/knowDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#043779",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "行业资讯",
+        "iconPath": "images/index/news-icon2.png",
+        "selectedIconPath": "images/index/news-icon.png"
+      },
+      {
+        "pagePath": "pages/theory/theory",
+        "text": "理论研究",
+        "iconPath": "images/index/theory-icon2.png",
+        "selectedIconPath": "images/index/theory-icon.png"
+      },
+      {
+        "pagePath": "pages/law/law",
+        "text": "法律法规",
+        "iconPath": "images/index/law-icon2.png",
+        "selectedIconPath": "images/index/law-icon.png"
+      }
+    ],
+    "backgroundColor": "#02295C",
+    "color": "#FFFFFF",
+    "selectedColor": "#FFFFFF",
+    "position": "bottom"
+  }
+}

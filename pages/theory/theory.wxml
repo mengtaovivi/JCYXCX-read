@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='theory-list-wrap'>
+    <view class='theory-item' catchtap='knowledgeDetails' wx:for="{{list}}" wx:key="{{index}}" data-id='{{item.BH}}'>
+      <text class='theory-title'>{{item.BT}}</text>
+      <text class='theory-content'>{{item.NR}}</text>
+      <text class='theory-time'>{{item.FBSJ}}</text>
+    </view>
+  </view>
+  <!--没有内容显示得图片  -->
+  <view wx:if="{{noData || list.length == 0}}" class='nodata'>
+    <image src='/images/index/nodata.png'></image>
+  </view>
+  <!--上拉加载提示  -->
+  <view class='loading' wx:if="{{isLoadData}}" >加载中..</view>
+  <view calss='noMore' wx:if="{{noMore}}">没有更多理论研究</view>
+</view>

@@ -1,0 +1,18 @@
+<view class='container'>
+  <image wx:if="{{list.length > 0}}"  class='banner-ad' src='/images/index/banner_ad.jpg'>
+  </image>
+  <view class='news-list-wrap'>
+    <view class='news-item' catchtap='newDetails' wx:for="{{list}}" wx:key="{{index}}" data-id='{{item.BH}}'>
+      <text class='news-title'>{{item.BT}}</text>
+      <text class='news-content'>{{item.NR}}</text>
+      <text class='news-time'>{{item.FBSJ}}</text>
+    </view>
+  </view>
+  <!--没有内容显示得图片  -->
+  <view wx:if="{{noData || list.length == 0}}" class='nodata'>
+    <image src='/images/index/nodata.png'></image>
+  </view>
+  <!--上拉加载提示  -->
+  <view class='loading' wx:if="{{isLoadData}}" >加载中..</view>
+  <view calss='noMore' wx:if="{{noMore}}">没有更多资讯</view>
+</view>
